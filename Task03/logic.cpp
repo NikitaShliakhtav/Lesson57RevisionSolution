@@ -12,7 +12,17 @@
 
 #include "logic.h"
 
+int count_gigis(long long number) {
+	if (number >= -9 && number <= 9) {
+		return 1;
+}
+
+	return 1 + count_gigis(number / 10);
+
+}
+
 bool is_digits_count_odd(long long number) {
-	
-	return is_digits_count_odd(number);
+
+		
+	return count_gigis( number) % 2 == 1;
 }

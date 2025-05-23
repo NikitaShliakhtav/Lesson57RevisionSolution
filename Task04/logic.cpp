@@ -18,5 +18,6 @@
 #include "logic.h"
 
 long long get_tribonacci_number(int index) {
+
 	return -2;
 }
